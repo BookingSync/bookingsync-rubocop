@@ -1,28 +1,46 @@
 # Bookingsync::Rubocop
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bookingsync/rubocop`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem is a collection of Rubocop configuration and (potentially) custom cops for BookingSync projects.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'bookingsync-rubocop'
+gem 'bookingsync-rubocop', required: false, group: :development
 ```
 
 And then execute:
 
     $ bundle install
 
-Or install it yourself as:
-
-    $ gem install bookingsync-rubocop
-
 ## Usage
 
-TODO: Write usage instructions here
+Add the following lines to `.rubocop.yml`:
+
+```yaml
+inherit_gem:
+  bookingsync-rubocop:
+    - config/base.yml
+    - config/rails.yml
+    - config/rspec.yml
+```
+
+Keep in mind that in order to use the last 2 configs file must contain:
+
+```yaml
+require:
+  - rubocop-rails
+  - rubocop-rspec
+```
+
+In order for your local config, gem configs and .rubocop.todo.yml to merge nicely use:
+
+```yaml
+inherit_mode:
+  merge:
+    - Exclude
+```
 
 ## Development
 
@@ -33,7 +51,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/bookingsync-rubocop.
-
 
 ## License
 
