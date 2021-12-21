@@ -1,0 +1,25 @@
+RSpec:
+  Exclude:
+    - "spec/factories/**/*.rb"
+
+RSpec/ExampleLength:
+  Max: 20
+  CountAsOne:
+    - array
+    - hash
+    - heredoc
+
+RSpec/ExpectChange:
+  EnforcedStyle: block
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Max: 20
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 20
+
+RSpec/NestedGroups:
+  Max: 7
