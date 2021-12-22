@@ -7,7 +7,7 @@ This gem is a collection of Rubocop configuration and (potentially) custom cops 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'bookingsync-rubocop', required: false, group: :development
+gem "bookingsync-rubocop", require: false, group: :development
 ```
 
 And then execute:
