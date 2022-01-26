@@ -57,13 +57,13 @@ Metrics/BlockLength:
     - "spec/factories/**/*.rb"
     - "config/routes.rb"
 
-Metrics/MethodLength:
+Metrics/ClassLength:
   CountAsOne:
     - array
     - hash
     - heredoc
 
-Metrics/ClassLength:
+Metrics/MethodLength:
   CountAsOne:
     - array
     - hash
