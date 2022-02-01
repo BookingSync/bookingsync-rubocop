@@ -81,6 +81,11 @@ Style/ClassAndModuleChildren:
 
 Style/CommandLiteral:
   EnforcedStyle: percent_x
+  
+Style/Documentation:
+  Exclude:
+    - "db/migrate/**/*.rb"
+    - "db/data/**/*.rb"
 
 Style/DoubleNegation:
   Enabled: false
