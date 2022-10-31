@@ -1,2 +1,12 @@
 Rails/WhereExists:
   EnforcedStyle: where
+
+Rails/ActionOrder:
+   ExpectedOrder:
+     - index
+     - show
+     - new
+     - create
+     - edit
+     - update
+     - destroy
