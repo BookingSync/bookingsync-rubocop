@@ -11,6 +11,9 @@ RSpec/ExampleLength:
 
 RSpec/ExpectChange:
   EnforcedStyle: block
+  
+RSpec/IndexedLet:
+  Enabled: false
 
 RSpec/LetSetup:
   Enabled: false
