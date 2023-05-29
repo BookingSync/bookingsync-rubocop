@@ -27,6 +27,9 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+
 Layout/LineEndStringConcatenationIndentation:
   EnforcedStyle: indented
 
@@ -65,10 +68,7 @@ Metrics/ClassLength:
     - heredoc
 
 Metrics/MethodLength:
-  CountAsOne:
-    - array
-    - hash
-    - heredoc
+  Enabled: false
 
 Security/JSONLoad:
   Exclude:
