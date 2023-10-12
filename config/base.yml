@@ -82,6 +82,8 @@ Style/Alias:
 
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact
+  Exclude:
+    - "config/application.rb"
 
 Style/CommandLiteral:
   EnforcedStyle: percent_x
