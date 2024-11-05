@@ -8,6 +8,9 @@ Rails/ActionOrder:
     - update
     - destroy
 
+Rails/BulkChangeTable:
+  Enabled: false
+
 Rails/ThreeStateBooleanColumn:
   Enabled: false
   
