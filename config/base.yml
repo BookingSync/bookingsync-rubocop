@@ -58,6 +58,11 @@ Lint/UnusedMethodArgument:
   AllowUnusedKeywordArguments: true
 
 Metrics/BlockLength:
+  CountAsOne:
+    - array
+    - hash
+    - heredoc
+    - method_call
   Exclude:
     - "spec/rails_helper.rb"
     - "spec/**/*_spec.rb"
@@ -69,9 +74,15 @@ Metrics/ClassLength:
     - array
     - hash
     - heredoc
+    - method_call
 
 Metrics/MethodLength:
-  Enabled: false
+  Max: 15
+  CountAsOne:
+    - array
+    - hash
+    - heredoc
+    - method_call
 
 Security/JSONLoad:
   Exclude:
@@ -87,7 +98,7 @@ Style/ClassAndModuleChildren:
 
 Style/CommandLiteral:
   EnforcedStyle: percent_x
-  
+
 Style/Documentation:
   Exclude:
     - "db/migrate/**/*.rb"
@@ -111,6 +122,6 @@ Style/RaiseArgs:
 
 Style/RegexpLiteral:
   EnforcedStyle: percent_r
-  
+
 Style/YodaExpression:
   Enabled: false

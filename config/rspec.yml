@@ -8,10 +8,11 @@ RSpec/ExampleLength:
     - array
     - hash
     - heredoc
+    - method_call
 
 RSpec/ExpectChange:
   EnforcedStyle: block
-  
+
 RSpec/IndexedLet:
   Enabled: false
 
